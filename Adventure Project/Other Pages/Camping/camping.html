@@ -1,0 +1,91 @@
+<!--<!Doctype html>.-->
+<html>
+<head>
+<title> Camping </title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
+<!-- SLIDER -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" />
+
+<link rel ="stylesheet" href="camping_style.css">
+    
+<script> 
+    
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}    
+    
+    
+</script>
+</head>
+<body>
+
+<div class = "main">
+<h1> Camping </h1>
+<p> Camping in the mountains in reality is a leisurely activity. Jammu & Kashmir is a multi factor demand set like a jewel on the map of India. the two major Himalayan ranges, the great Himalayan and the Pirpanchal surround the valley from the north and south respectively, The Mughal aptly called Kashmir as ‘paradise on earth’ and traveled long distance to spend the summers in its cool environs. In Jammu Sanasar offers Wilderness Adventure Camps that commence about 4 years ago and was established by the Extreme Himalayan Adventures Association in collaboration with the Jammu Tourism Department. This group works towards promoting and offering wilderness adventure camping as well as adventure sports to all tourists. Each camp can accommodate up to 100 participants that includes boarding and loading facilities. Kashmir is the land were many holiday ideas are related, a gift if its spectacular landscape and distinctive seasons. In winter, when snow carpets the valley, one can go to sky and sledges rides along the slops of Gulmarg in springs and summers the honey-dewed orchards flowers-carpeted meadows, rippling lakes and blue skies beckon everyone to sample the many delights of the valley. The destinations like Aru, Chandanwari, Gulmarg, Sonmarg, Baisaran, Yusmarg, Sanasar, Patnitop, Ladakh region are also the ideal places to experience camping on the lap of beautiful nature in Jammu and Kashmir.
+</p><br/>
+
+<h1 class = "gallery"> Gallery </h1>
+
+    
+<div class="slider-wrapper">
+    <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider">
+        <div class="slide banner-slide slide0">
+        </div>
+        
+        <div class="slide banner-slide slide1">
+        </div>
+        
+        <div class="slide banner-slide slide2">
+        </div>
+        
+        <div class="slide banner-slide slide3">
+        </div>
+    </div>
+    <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+</div>    
+    
+    
+    
+
+</div>
+<script defer async src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    
+<script>
+    $(document).ready(function() {
+    if ($('.slider').length) {
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2500,
+            responsive: true,
+            loop: true,
+            swipe: true,
+            prevArrow: $(".slide-prev"),
+            nextArrow: $(".slide-next"),
+            touchMove: true,
+            adaptiveHeight: true
+        });
+    }
+    });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+html, body{
+    height: 100%;
+}
+
+.main{
+    
+    /*background-color: aqua;*/
+    width: 900px;
+    height:1500px;
+    margin-left: 260px;
+    
+    
+}
+h1{
+    
+    font-size:5em;
+    font-family:'oswald';
+    margin-top:50px;
+}
+
+.main p{
+    
+    font-size:1.4em;
+}
+
+.gallery{
+    
+    font-size:60px;
+    font-weight: 100;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+    
+.slider-wrapper{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.trek-slider, .slider {
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide0{
+    background: url('img/1.jpg');   
+}
+.slide1{
+    background: url('img/2.jpg');
+}
+.slide2{
+    background: url('img/3.jpg');
+}
+.slide3{
+    background: url('img/4.jpg');
+}
+
+.slide{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.slide-center-prev, .slide-prev {
+    left: 0;
+}
+.slide-center-next, .slide-next {
+    right: 0;
+}
+.slide-center-prev, .slide-center-next, .slide-prev, .slide-next {
+    display: block !important;
+    /* padding: 0 1em; */
+    height: 100%;
+    position: absolute;
+    border: 0;
+    outline: none;
+    z-index: 2;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    width: 10%;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

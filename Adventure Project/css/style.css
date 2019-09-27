@@ -1,0 +1,236 @@
+/* Default Styles */
+html, body{
+    color: #222;
+    font-family: 'OSWALD';
+  line-height: 1.3; 
+    height: 100%;
+}
+
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styling the image */
+
+.main{
+
+}
+
+.banner{
+    position: relative;
+    background-image: url(img/kashmir.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.banner-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 112, 148, 0.25);
+    z-index: 1;
+}
+
+/* Navigation */
+
+.nav{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999999;
+    background-color: rgba(61, 181, 63, 0.7);
+}
+
+.nav_ul li{
+    display: inline-block;
+}
+
+.nav_ul li a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 22px 30px;
+    transition: color .3s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.nav_ul li:last-child{
+    float: right;
+    cursor: pointer;
+}
+
+.nav_ul li a:hover{
+    color: #555;
+    background-color: #fff;
+    
+}
+.nav_ul li a svg{
+    transition: transform .3s ease;
+}
+
+.nav_ul li a:hover svg {
+    transform: scale(1.5);    
+}
+
+
+/* Styling The Site Title */
+
+.siteTitle{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 4.5em;
+    font-family: 'OSWALD';
+    color:#ddd;
+    padding-top: 2.2em;
+    z-index: 2;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    
+}
+
+.btn{
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;    
+}
+.btn svg{
+    color: #fff;
+    font-size: 5em;
+}
+
+.subTitle{
+    background-color: rgba(0, 0, 0, 1);
+    font-size: .6em;
+    border:2px;
+    height: 100px;
+    width: 100px;
+    padding:10px 20px;
+    opacity:0.6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    
+}
+
+.scroll{
+    position: absolute;
+    font-size: 4em;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-align: center;
+    z-index: 2;
+    animation-name: scroller;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.skipToMain svg{
+    color: #cacaca;
+    
+}
+
+
+/* Animations */
+@-webkit-keyframes scroller{
+    0% {bottom:10%;}
+    50% {bottom:7%;}
+    100% {bottom:10%;}
+}
+
+@keyframes scroller{
+    0% {bottom:10%;}
+    50% {bottom:7%;}
+    100% {bottom:10%;}
+}
+
+/* About Us Styling */
+.about{
+    
+    width:100%;
+    height:600px;
+    background-color:darkgray;
+}
+
+
+
+.about h1{
+    
+    text-align:center;
+    padding:80px;
+    font-size: 50px;
+    font-family:sans-serif;
+    
+    
+}
+
+.about p{
+    
+    font-size: 1.6em;
+    padding-left: 200px;
+    width:1200px;
+    
+}
+
+.about p2{
+    
+    font-size: 1.6em;
+    padding-left: 200px;
+    width:1200px;
+    height:300px;
+    
+    
+}
+.camping{
+    
+    background-image: url(img/camping.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+.bttn{
+    
+    width:350px;
+    height:100px;
+    margin-top:450px;
+    margin-left:505px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display:inline-block;
+    color:white;
+    font-family:'Bree+Serif';
+    font-size:1.9em;
+    opacity: 2.0;
+   
+
+}
+.bttn:hover{
+    
+    transform: scale(1.2); 
+    cursor:pointer;
+    transition: all 0.3s ease;
+    
+    
+}

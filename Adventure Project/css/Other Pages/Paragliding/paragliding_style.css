@@ -1,0 +1,107 @@
+
+html, body{
+    
+    height: 100%;
+      
+}
+
+.main{
+    
+    background-image: url(img/para3.jpg);
+    width:100%;
+    height:660px;
+    position: absolute;
+    top:0;
+    right: 0;
+    left:0;
+    background-position:top;
+         
+}
+
+.main-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+.main h1{
+    
+    font-size:80px;
+    font-family: monospace;
+    color:antiquewhite;
+    margin-top:120px;
+    margin-bottom: 0;
+    text-align: center;
+    text-decoration-line: overline;
+
+}
+.main h3{
+    
+    font-size: 15px;
+    font-family: monospace;
+    color:antiquewhite;
+    text-align: center;
+    margin-bottom: 10px; 
+    margin-top:0;
+    
+        
+}
+
+ /*.scroll{
+    
+    transition: all 0.3s ease;
+    z-index: 2;
+    animation-name: scroller;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}   */
+
+.skipToMain{
+    
+   margin-left: 650px;
+   font-size:80px;
+   color:antiquewhite;
+     
+}
+
+.para_form{
+    
+    width:100%;
+    height:200px;
+    background-color:transparent;
+    /*border-style:groove; */
+    color:antiquewhite;
+    font-family:monospace;
+    font-size:15px;
+    text-align: center;
+    margin-bottom:0px;
+    z-index:2222222;
+    position: relative;
+    
+}
+
+input[type=text] {
+    
+    padding: 10px 40px;
+    margin:5px 40px;
+    border-radius: 19px;
+    background-color: transparent;
+        
+
+}
+
+input[type=submit] {
+    
+    
+    padding: 5px 20px;
+    margin-top:70px;
+    color:dimgrey;
+    background-color:transparent;
+    
+}
+
+
+
